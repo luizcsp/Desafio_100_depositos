@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio do Cofre</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <h1>Desafio do Cofre</h1>
+    
+    <!-- Barra de progresso -->
+    <div id="progress-bar">
+        <div id="progress">0%</div>
+    </div>
+
     <div id="total">Total: R$ 0,00</div>
+
     <div id="tabela-container">
         <table id="cofre"></table>
     </div>
+
     <button id="reset-btn">Resetar (Senha)</button>
     <button id="info-btn"><i class="fas fa-question-circle"></i> Como Funciona?</button>
 
+    <!-- Modal de ajuda -->
     <div id="popup" class="popup">
         <div class="popup-content">
             <span class="close-button">&times;</span>
@@ -36,3 +43,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
