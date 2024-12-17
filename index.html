@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Cofre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Desafio do Cofre</h1>
+    <div id="total">Total: R$ 0,00</div>
+    <div id="tabela-container">
+        <table id="cofre"></table>
+    </div>
+    <button id="reset-btn">Resetar (Senha)</button>
+    <button id="info-btn"><i class="fas fa-question-circle"></i> Como Funciona?</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Como funciona o Desafio do Cofre?</h2>
+            <p>Imagine uma tabela com 100 números, de 1 a 100, organizados em 20 linhas e 5 colunas. Cada número representa um valor em reais.</p>
+            <p>O desafio consiste em escolher um valor da tabela a cada semana (ou a cada quinzena) e 'depositar' esse valor no seu cofrinho (ou poupança). Marque na tabela os valores já depositados para não repetir.</p>
+            <p>Você pode escolher os valores aleatoriamente, seguir uma sequência ou escolher de acordo com sua disponibilidade financeira. O importante é criar o hábito!</p>
+            <p>No final das 20 semanas, você terá juntado R$ 5.050,00! Parece muito, mas dividido em pequenas quantias semanais, o esforço é menor.</p>
+            <p>Exemplo semanal: Semana 1: R$ 3; Semana 2: R$ 7; Semana 3: R$ 12; e assim por diante. Os valores iniciais são baixos, facilitando o início.</p>
+            <p>O método é flexível: se em uma semana você tiver menos dinheiro, escolha um valor menor na tabela. O importante é manter a consistência.</p>
+            <p>Ao final do desafio, você terá uma quantia significativa guardada para realizar um sonho, investir ou criar uma reserva de emergência!</p>
+             <p> Senha padrão para resetar a tabela "admin123"</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
