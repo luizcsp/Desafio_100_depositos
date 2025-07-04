@@ -3,192 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio do Cofre</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Desafio do Cofre - Versão Melhorada</title>
+    <meta name="description" content="Desafio de economia pessoal para juntar R$ 5.050,00 em 100 depósitos">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Desafio do Cofre</h1>
-        <div class="progress-bar-container">
-            <div class="progress-bar" id="progress-bar"></div>
-            <span id="progress-text">0%</span>
-        </div>
-        <p class="total-amount">Total: R$ 0,00</p>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>R$ 1,00</th>
-                        <th>R$ 2,00</th>
-                        <th>R$ 3,00</th>
-                        <th>R$ 4,00</th>
-                        <th>R$ 5,00</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-valor="1">R$ 1,00</td>
-                        <td data-valor="2">R$ 2,00</td>
-                        <td data-valor="3">R$ 3,00</td>
-                        <td data-valor="4">R$ 4,00</td>
-                        <td data-valor="5">R$ 5,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="6">R$ 6,00</td>
-                        <td data-valor="7">R$ 7,00</td>
-                        <td data-valor="8">R$ 8,00</td>
-                        <td data-valor="9">R$ 9,00</td>
-                        <td data-valor="10">R$ 10,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="11">R$ 11,00</td>
-                        <td data-valor="12">R$ 12,00</td>
-                        <td data-valor="13">R$ 13,00</td>
-                        <td data-valor="14">R$ 14,00</td>
-                        <td data-valor="15">R$ 15,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="16">R$ 16,00</td>
-                        <td data-valor="17">R$ 17,00</td>
-                        <td data-valor="18">R$ 18,00</td>
-                        <td data-valor="19">R$ 19,00</td>
-                        <td data-valor="20">R$ 20,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="21">R$ 21,00</td>
-                        <td data-valor="22">R$ 22,00</td>
-                        <td data-valor="23">R$ 23,00</td>
-                        <td data-valor="24">R$ 24,00</td>
-                        <td data-valor="25">R$ 25,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="26">R$ 26,00</td>
-                        <td data-valor="27">R$ 27,00</td>
-                        <td data-valor="28">R$ 28,00</td>
-                        <td data-valor="29">R$ 29,00</td>
-                        <td data-valor="30">R$ 30,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="31">R$ 31,00</td>
-                        <td data-valor="32">R$ 32,00</td>
-                        <td data-valor="33">R$ 33,00</td>
-                        <td data-valor="34">R$ 34,00</td>
-                        <td data-valor="35">R$ 35,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="36">R$ 36,00</td>
-                        <td data-valor="37">R$ 37,00</td>
-                        <td data-valor="38">R$ 38,00</td>
-                        <td data-valor="39">R$ 39,00</td>
-                        <td data-valor="40">R$ 40,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="41">R$ 41,00</td>
-                        <td data-valor="42">R$ 42,00</td>
-                        <td data-valor="43">R$ 43,00</td>
-                        <td data-valor="44">R$ 44,00</td>
-                        <td data-valor="45">R$ 45,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="46">R$ 46,00</td>
-                        <td data-valor="47">R$ 47,00</td>
-                        <td data-valor="48">R$ 48,00</td>
-                        <td data-valor="49">R$ 49,00</td>
-                        <td data-valor="50">R$ 50,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="51">R$ 51,00</td>
-                        <td data-valor="52">R$ 52,00</td>
-                        <td data-valor="53">R$ 53,00</td>
-                        <td data-valor="54">R$ 54,00</td>
-                        <td data-valor="55">R$ 55,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="56">R$ 56,00</td>
-                        <td data-valor="57">R$ 57,00</td>
-                        <td data-valor="58">R$ 58,00</td>
-                        <td data-valor="59">R$ 59,00</td>
-                        <td data-valor="60">R$ 60,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="61">R$ 61,00</td>
-                        <td data-valor="62">R$ 62,00</td>
-                        <td data-valor="63">R$ 63,00</td>
-                        <td data-valor="64">R$ 64,00</td>
-                        <td data-valor="65">R$ 65,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="66">R$ 66,00</td>
-                        <td data-valor="67">R$ 67,00</td>
-                        <td data-valor="68">R$ 68,00</td>
-                        <td data-valor="69">R$ 69,00</td>
-                        <td data-valor="70">R$ 70,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="71">R$ 71,00</td>
-                        <td data-valor="72">R$ 72,00</td>
-                        <td data-valor="73">R$ 73,00</td>
-                        <td data-valor="74">R$ 74,00</td>
-                        <td data-valor="75">R$ 75,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="76">R$ 76,00</td>
-                        <td data-valor="77">R$ 77,00</td>
-                        <td data-valor="78">R$ 78,00</td>
-                        <td data-valor="79">R$ 79,00</td>
-                        <td data-valor="80">R$ 80,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="81">R$ 81,00</td>
-                        <td data-valor="82">R$ 82,00</td>
-                        <td data-valor="83">R$ 83,00</td>
-                        <td data-valor="84">R$ 84,00</td>
-                        <td data-valor="85">R$ 85,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="86">R$ 86,00</td>
-                        <td data-valor="87">R$ 87,00</td>
-                        <td data-valor="88">R$ 88,00</td>
-                        <td data-valor="89">R$ 89,00</td>
-                        <td data-valor="90">R$ 90,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="91">R$ 91,00</td>
-                        <td data-valor="92">R$ 92,00</td>
-                        <td data-valor="93">R$ 93,00</td>
-                        <td data-valor="94">R$ 94,00</td>
-                        <td data-valor="95">R$ 95,00</td>
-                    </tr>
-                    <tr>
-                        <td data-valor="96">R$ 96,00</td>
-                        <td data-valor="97">R$ 97,00</td>
-                        <td data-valor="98">R$ 98,00</td>
-                        <td data-valor="99">R$ 99,00</td>
-                        <td data-valor="100">R$ 100,00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <button id="reset-btn">Resetar (Senha)</button>
-        <button id="info-btn"><i class="fas fa-question-circle"></i>Como Funciona?</button>
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h1>Desafio do Cofre</h1>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-card">
+                        <span class="stat-label">Meta Total</span>
+                        <span class="stat-value">R$ 5.050,00</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Progresso</span>
+                        <span class="stat-value" id="progress-percentage">0%</span>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-        <div id="popup" class="popup">
-            <div class="popup-content">
-                <span class="close-button">&times;</span>
-                <h2>Como funciona o Desafio do Cofre?</h2>
-                <p>Imagine uma tabela com 100 números, de 1 a 100, organizados em 20 linhas e 5 colunas. Cada número representa um valor em reais.</p>
-                <p>O desafio consiste em escolher um valor da tabela a cada semana (ou a cada quinzena) e 'depositar' esse valor no seu cofrinho (ou poupança). Marque na tabela os valores já depositados para não repetir.</p>
-                <p>Você pode escolher os valores aleatoriamente, seguir uma sequência ou escolher de acordo com sua disponibilidade financeira. O importante é criar o hábito!</p>
-                <p>No final das 20 semanas, você terá juntado R$ 5.050,00! Parece muito, mas dividido em pequenas quantias semanais, o esforço é menor.</p>
-                <p>Exemplo semanal: Semana 1: R$ 3; Semana 2: R$ 7; Semana 3: R$ 12; e assim por diante. Os valores iniciais são baixos, facilitando o início.</p>
-                <p>O método é flexível: se em uma semana você tiver menos dinheiro, escolha um valor menor na tabela. O importante é manter a consistência.</p>
-                <p>Ao final do desafio, você terá uma quantia significativa guardada para realizar um sonho, investir ou criar uma reserva de emergência!</p>
-                <p>Senha padrão para resetar a tabela "admin123"</p>
+        <main class="main-content">
+            <section class="progress-section">
+                <div class="progress-container">
+                    <div class="progress-info">
+                        <h2>Seu Progresso</h2>
+                        <div class="total-amount" id="total-display">R$ 0,00</div>
+                        <div class="deposits-count">
+                            <span id="deposits-count">0</span> de 100 depósitos realizados
+                        </div>
+                    </div>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="progress-milestones">
+                            <div class="milestone" data-value="25">25%</div>
+                            <div class="milestone" data-value="50">50%</div>
+                            <div class="milestone" data-value="75">75%</div>
+                            <div class="milestone" data-value="100">100%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <div class="section-header">
+                    <h3>Tabela de Valores</h3>
+                    <div class="table-controls">
+                        <button class="btn btn-secondary" id="info-btn">
+                            <i class="fas fa-question-circle"></i>
+                            Como Funciona?
+                        </button>
+                        <button class="btn btn-danger" id="reset-btn">
+                            <i class="fas fa-undo"></i>
+                            Resetar
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="table-container">
+                    <table class="values-table" id="values-table">
+                        <tbody id="table-body">
+                            <!-- Tabela será gerada dinamicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal de Informações -->
+        <div id="info-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2><i class="fas fa-info-circle"></i> Como funciona o Desafio do Cofre?</h2>
+                    <button class="modal-close" id="info-modal-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="info-section">
+                        <h3><i class="fas fa-target"></i> O Objetivo</h3>
+                        <p>O desafio consiste em fazer 100 depósitos, cada um correspondente a um valor de R$ 1,00 a R$ 100,00. Ao final, você terá juntado <strong>R$ 5.050,00</strong>!</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3><i class="fas fa-calendar-week"></i> Como Participar</h3>
+                        <p>Escolha um valor da tabela a cada semana (ou quinzena) e deposite esse valor no seu cofrinho ou poupança. Clique no valor para marcá-lo como depositado.</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3><i class="fas fa-lightbulb"></i> Dicas Importantes</h3>
+                        <ul>
+                            <li>Você pode escolher os valores aleatoriamente ou seguir uma sequência</li>
+                            <li>Adapte os valores à sua disponibilidade financeira</li>
+                            <li>O importante é manter a consistência</li>
+                            <li>Comece pelos valores menores para criar o hábito</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3><i class="fas fa-chart-line"></i> Exemplo de Cronograma</h3>
+                        <p><strong>Semana 1:</strong> R$ 3,00 | <strong>Semana 2:</strong> R$ 7,00 | <strong>Semana 3:</strong> R$ 12,00</p>
+                        <p>Continue assim até completar todos os 100 valores!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Confirmação de Reset -->
+        <div id="reset-modal" class="modal">
+            <div class="modal-content modal-small">
+                <div class="modal-header">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Confirmar Reset</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Tem certeza que deseja resetar todo o seu progresso? Esta ação não pode ser desfeita.</p>
+                    <div class="modal-actions">
+                        <button class="btn btn-secondary" id="reset-cancel">Cancelar</button>
+                        <button class="btn btn-danger" id="reset-confirm">Sim, Resetar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Confirmação de Depósito -->
+        <div id="deposit-modal" class="modal">
+            <div class="modal-content modal-small">
+                <div class="modal-header">
+                    <h2><i class="fas fa-coins"></i> Confirmar Depósito</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Confirma o depósito de <span id="deposit-amount"></span>?</p>
+                    <div class="modal-actions">
+                        <button class="btn btn-secondary" id="deposit-cancel">Cancelar</button>
+                        <button class="btn btn-primary" id="deposit-confirm">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast de Notificação -->
+        <div id="toast" class="toast">
+            <div class="toast-content">
+                <i class="toast-icon"></i>
+                <span class="toast-message"></span>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
 
